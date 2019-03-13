@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "homepage": "http://shubhamg931.github.io/upgrad",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "now-start": "serve -s ./build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "1.16.3",
+    "react-scripts": "^2.1.8",
+    "terser": "^3.14.1"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "connected-react-router": "4.5.0",
+    "fast-csv": "^2.4.1",
+    "fs": "0.0.1-security",
+    "papaparse": "^4.6.3",
+    "react": "16.7.0",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "16.7.0",
+    "react-redux": "5.1.1",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.1",
+    "redux-thunk": "2.3.0",
+    "sanitize.css": "7.0.3",
+    "serve": "10.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
