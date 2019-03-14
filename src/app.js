@@ -65,6 +65,10 @@ class App extends Component {
   changeView = () => {
     this.setState({renderView: "none", renderAdd: ""})
   }
+  
+  goBack = () => {
+    this.setState({renderView: "", renderAdd: "none"});
+}
 
   render() {
     return (
@@ -109,7 +113,7 @@ class App extends Component {
           <div>
             <div className="row">
               <div className="col s12">
-                <button className="btn">
+                <button className="btn" onClick={() => {this.goBack()}}>
                   BACK
                 </button>
               </div>
